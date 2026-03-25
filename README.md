@@ -1,1 +1,162 @@
-# larodriguezsi-del.github.io
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entropía Máxima | AquaJet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00d4ff;
+            --dark: #0a0a0a;
+            --glass: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            color: white;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid var(--primary);
+        }
+
+        h1, h2 {
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 2px;
+            color: var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: var(--glass);
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .project-desc {
+            font-size: 1.2rem;
+            color: #ccc;
+            max-width: 700px;
+            margin: 1rem auto;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+            border-left: 4px solid var(--primary);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: rgba(0, 212, 255, 0.1);
+        }
+
+        .role {
+            font-weight: bold;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: var(--primary);
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 20px var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ENTROPÍA MÁXIMA</h1>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>AquaJet: Propulsión Invisible</h2>
+            <p class="project-desc">
+                Desafiando los límites de la física mediante el <strong>Efecto Marangoni</strong>. 
+                Nuestra Startup desarrolla sistemas de propulsión autónoma aprovechando 
+                la energía de la tensión superficial.
+            </p>
+            <a href="#team" class="btn">Conoce al Equipo</a>
+        </section>
+
+        <h2 style="text-align: center; margin-top: 4rem;">Board of Directors</h2>
+        <div class="team-grid" id="team">
+            <div class="card">
+                <span class="role">CEO</span>
+                <h3>Leidy Alejandra Pardo Chicuazuque</h3>
+                <p>Estrategia y Visión</p>
+            </div>
+            <div class="card">
+                <span class="role">Director Científico</span>
+                <h3>Habib Rodrigo Guisao Argote</h3>
+                <p>I+D y Rigor Técnico</p>
+            </div>
+            <div class="card">
+                <span class="role">Director Financiero</span>
+                <h3>Laura Alejandra Rodríguez Silva</h3>
+                <p>Gestión de Recursos</p>
+            </div>
+            <div class="card">
+                <span class="role">Director Creativo</span>
+                <h3>Andrés Mateo Ahumada Diaz</h3>
+                <p>Diseño y Marketing</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Entropía Máxima - Física: Las grandes ideas que cambiaron el mundo</p>
+    </footer>
+
+</body>
+</html>
